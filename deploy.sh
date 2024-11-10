@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Starting deployment
-echo "Starting deployment..."
-
 # Pull latest changes from the remote repository
 git pull origin main
 
