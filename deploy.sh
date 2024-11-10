@@ -24,7 +24,6 @@ else
 fi
 
 # Example deployment steps
-# For example, if you are deploying a web application:
+# Uncomment and modify the following lines if needed:
 # cp -r /home/Culture/git-test/* /var/www/html/
 # systemctl restart apache2
-
