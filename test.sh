@@ -11,9 +11,13 @@ LOCAL=$(git rev-parse HEAD)
 REMOTE=$(git rev-parse origin/main)
 
 if [ "$LOCAL" != "$REMOTE" ]; then
-    echo "There are changes in the remote repository that need to be pulled."
-    exit 1  # Error: Changes need to be pulled
+    echo "There are changes that need to be pushed to the remote repository."
+    exit 0  # Success: Changes found
 else
-    echo "The repository is up to date. No changes to pull."
-    exit 0  # Success: No changes needed
+    echo "The repository is up to date. No changes to push."
+    exit 0  # Success: No changes
 fi
+
+# If something goes wrong, print an error message and exit with a non-zero code
+echo "Failed to check for changes."
+exit 1  # Failure: Something went wrong
