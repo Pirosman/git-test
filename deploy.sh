@@ -28,5 +28,3 @@ fi
 # cp -r /home/Culture/git-test/* /var/www/html/
 # systemctl restart apache2
 
-# Deployment complete
-echo "Deployment completed successfully."
